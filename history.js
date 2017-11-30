@@ -70,6 +70,7 @@ export default class History extends React.Component {
                         </View>
                     );
                 }}
+                enableEmptySections={true}
             />
         )
     }

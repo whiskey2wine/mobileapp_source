@@ -30,6 +30,7 @@ export default class Profile extends React.Component {
                 this.setState({ name: data.firstnameEn + ' ' + data.lastnameEn, email: data.email, mobile: data.mobileNumber, balance: data.balance });
             })
             .catch((error) => {
+                console.log('fetchUserInit', error);
                 throw error;
             });
         this.fetchUserData();
@@ -43,7 +44,8 @@ export default class Profile extends React.Component {
                     this.setState({ name: data.firstnameEn + ' ' + data.lastnameEn, email: data.email, mobile: data.mobileNumber, balance: data.balance });
                 }
             })
-            .catch((error) => {
+                .catch((error) => {
+                console.log('fetchUser', error);
                 throw error;
             });
         }, 5000)

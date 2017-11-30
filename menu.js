@@ -201,6 +201,7 @@ export default class Menu extends React.Component {
                             </TouchableOpacity>
                         );
                     }}
+                    enableEmptySections={true}
                     />
             </View>    
         )
